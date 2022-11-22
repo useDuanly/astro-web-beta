@@ -1,0 +1,15 @@
+---
+export interface Props {
+  href:string;
+  body:string;
+}
+
+const {href, body} =Astro.props
+---
+    <a href={href}>{body}</a>
+
+<style>
+  a{
+    color: #ffff;
+  }
+</style>
