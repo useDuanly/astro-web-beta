@@ -1,4 +1,6 @@
 ---
+import Card from '../components/Card.astro';
+import ContentCard from '../components/ContentCard.astro';
 import Layout from '../layouts/Layout.astro';
 
 ---
@@ -6,16 +8,52 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Welcome to Astro.">
 	<>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <section class="content">
+      <article>
+        <article>
+         
+<ContentCard title="Title 1" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
+
+<ContentCard title="Title 2" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
+
+<ContentCard title="Title 3" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
+
+<ContentCard title="Title 4" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
+
+
+        </article>
+
+      
+      </article>
+
+      <article>
+        <aside>
+          <article>
+
+            <Card title="Astro" href="/puppy.jpg" body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."/>
+          </article>
+
+          <article>
+            <Card title="Nextjs" href="/puppy.jpg" body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."/>
+          </article>
+       <article>
+
+         <Card title="React" href="/puppy.jpg" body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."/>
+       </article>
+      </aside>
+      <article>
+   
+      </article>
+     </article>
+    
+
+    </section>
 	
 	</>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
+
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
@@ -53,4 +91,44 @@ import Layout from '../layouts/Layout.astro';
 		gap: 1rem;
 		padding: 0;
 	}
+
+  .content{
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    color: azure;
+    border:solid 5px salmon
+    
+  }
+
+  .content :nth-child(1),.content :nth-child(2),.content :nth-child(3),.content :nth-child(4){
+    border: solid 5px #2222;
+  
+  }
+/*Content*/
+  .content :nth-child(1){
+    grid-column: span 2
+  }
+ /*Aside*/
+  .content :nth-child(2){
+    grid-column: span 1;
+  
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: auto;
+    
+    justify-content: center;
+  }
+  .content :nth-child(3){
+    grid-column: span 2;
+    
+
+  }
+  .content :nth-child(4){
+    grid-column: span 2;
+    
+  }
+
 </style>
