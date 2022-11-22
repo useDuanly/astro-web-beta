@@ -30,6 +30,11 @@ const {title ,body} = Astro.props
     padding-left: 5px;
     text-align: start;
   }
+  @media only screen and (max-width: 600px) {
+    .card > h2 {
+      text-align: center;
+    }
+  }
   .card > p{
     line-height: 1.3rem;
     

@@ -79,5 +79,21 @@ const { title } = Astro.props;
     justify-content:space-between;
   
   }
+  @media only screen and (max-width: 600px) {
+    .header{
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+    }
+    .header >nav {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+    .footer{
+    display: flex;
+    justify-content: center;
+    }
+  }
 
 </style>
