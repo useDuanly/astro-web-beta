@@ -1,16 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@playwright/test': ^1.28.0
   astro: ^1.6.10
   astro-html-minifier: ^0.2.0
 
 dependencies:
   astro: registry.npmmirror.com/astro/1.6.10
   astro-html-minifier: registry.npmmirror.com/astro-html-minifier/0.2.0
-
-devDependencies:
-  '@playwright/test': registry.npmmirror.com/@playwright/test/1.28.0
 
 packages:
 
@@ -580,17 +576,6 @@ packages:
       tslib: registry.npmmirror.com/tslib/2.4.1
     dev: false
 
-  registry.npmmirror.com/@playwright/test/1.28.0:
-    resolution: {integrity: sha512-vrHs5DFTPwYox5SGKq/7TDn/S4q6RA1zArd7uhO6EyP9hj3XgZBBM12ktMbnDQNxh/fL1IUKsTNLxihmsU38lQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@playwright/test/-/test-1.28.0.tgz}
-    name: '@playwright/test'
-    version: 1.28.0
-    engines: {node: '>=14'}
-    hasBin: true
-    dependencies:
-      '@types/node': registry.npmmirror.com/@types/node/18.11.9
-      playwright-core: registry.npmmirror.com/playwright-core/1.28.0
-    dev: true
-
   registry.npmmirror.com/@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@polka/url/-/url-1.0.0-next.21.tgz}
     name: '@polka/url'
@@ -734,12 +719,6 @@ packages:
     dependencies:
       '@types/unist': registry.npmmirror.com/@types/unist/2.0.6
     dev: false
-
-  registry.npmmirror.com/@types/node/18.11.9:
-    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.11.9.tgz}
-    name: '@types/node'
-    version: 18.11.9
-    dev: true
 
   registry.npmmirror.com/@types/parse5/6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/parse5/-/parse5-6.0.3.tgz}
@@ -3517,14 +3496,6 @@ packages:
     dependencies:
       find-up: registry.npmmirror.com/find-up/4.1.0
     dev: false
-
-  registry.npmmirror.com/playwright-core/1.28.0:
-    resolution: {integrity: sha512-nJLknd28kPBiCNTbqpu6Wmkrh63OEqJSFw9xOfL9qxfNwody7h6/L3O2dZoWQ6Oxcm0VOHjWmGiCUGkc0X3VZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/playwright-core/-/playwright-core-1.28.0.tgz}
-    name: playwright-core
-    version: 1.28.0
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
 
   registry.npmmirror.com/postcss-load-config/3.1.4_postcss@8.4.19:
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-load-config/-/postcss-load-config-3.1.4.tgz}
