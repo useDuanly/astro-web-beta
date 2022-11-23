@@ -8,10 +8,23 @@ export interface Props {
 }
 
 const { title ,description} = Astro.props;
+const items = [
+  {
+    id:1,
+    href:"/blog",
+    body:"Blog",
+  },
+  {
+    id:2,
+    href:"/github",
+    body:"Github",
+  }
+]
+console.log(items)
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 	<Seo title={title} description={description}/>
 	</head>
@@ -20,14 +33,19 @@ const { title ,description} = Astro.props;
 
       <header class="header">
         <article>
-          <NavLink href="/" body="Logo"/>
+          <li>
+
+            <NavLink href="/" body="Logo"/>
+          </li>
 
         </article>
         <nav class="nav">
           
                 
-                <NavLink href="/blog" body="Blog"/>
-                <NavLink href="/github" body="Github"/>
+              {items.map((link)=>{
+                return <li id={link.id.toString()}>
+                  <NavLink href={link.href} body={link.body}/></li>
+              })}
   
         </nav>
       </header>
@@ -55,6 +73,16 @@ const { title ,description} = Astro.props;
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
+  li{
+    list-style-type: none;
+  }
+  a{
+  
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
   .container{
     
     max-width: 90%;
@@ -75,9 +103,19 @@ const { title ,description} = Astro.props;
     padding: 1rem;
     display: flex;
     justify-content:space-between;
+    
   
   }
+
+   .nav {
+  display: flex;
+   gap: 1rem;
+  }
   @media only screen and (max-width: 600px) {
+    .nav{
+      
+      gap: 0;
+    }
     .header{
       display: flex;
       align-items: center;
