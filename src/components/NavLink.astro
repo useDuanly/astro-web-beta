@@ -2,11 +2,12 @@
 export interface Props {
   href:string;
   body:string;
+  class?: string;
 }
 
-const {href, body} =Astro.props
+const {href, body, class:className} =Astro.props
 ---
-    <a href={href}>{body}</a>
+    <a class={className} href={href}>{body}</a>
 
 <style>
   a{

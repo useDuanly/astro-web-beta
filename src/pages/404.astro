@@ -4,6 +4,40 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="404 Page no found" description="error descripcion">
-  <h1>Error</h1>
-  <NavLink href="/" body="Return to Home"/>
+  <section class="error">
+    <h1>404 Page no found 😥</h1>
+    <p>Not found to Page <NavLink class={"err"} href="/" body="Return to Home 🥰"/></p>
+    
+  </section>
+  
 </Layout>
+
+<style>
+  .err{
+    padding: 1rem;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  .error{
+    padding: 1rem;
+    width: 60%;;
+    margin: 0 auto;
+    background-color: #DF4D38;
+    display: flex;
+    flex-flow:
+    row nowrap;
+    gap: 1.3rem;
+  
+  color: #ffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+.error > h1{
+  font-size: 32px;
+
+}
+
+</style>
