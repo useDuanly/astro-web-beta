@@ -1,149 +1,159 @@
 ---
-import Card from '../components/Card.astro';
-import ContentCard from '../components/ContentCard.astro';
-import Layout from '../layouts/Layout.astro';
-
+import Card from "../components/Card.astro";
+import ContentCard from "../components/ContentCard.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro." description="esta es mi descripcion de home">
-	<>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+  <>
+    <marquee behavior="
+  " direction="">
+      <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    </marquee>
     <section class="content">
       <article>
         <article>
-         
-<ContentCard title="Title 1" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
+          <ContentCard
+            title="Title 1"
+            body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."
+          />
 
-<ContentCard title="Title 2" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
+          <ContentCard
+            title="Title 2"
+            body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."
+          />
 
-<ContentCard title="Title 3" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
+          <ContentCard
+            title="Title 3"
+            body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."
+          />
 
-<ContentCard title="Title 4" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."/>
-
-
+          <ContentCard
+            title="Title 4"
+            body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio quidem libero totam quo. Voluptatem nisi neque iusto natus quae enim officia rerum? Ut quo, vitae quas consectetur consequatur eum."
+          />
         </article>
-
-      
       </article>
 
       <article>
         <aside>
           <article>
-
-            <Card title="Astro" href="/puppy.jpg" body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."/>
+            <Card
+              title="Astro"
+              href="/puppy.jpg"
+              body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."
+            />
           </article>
 
           <article>
-            <Card title="Nextjs" href="/puppy.jpg" body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."/>
+            <Card
+              title="Nextjs"
+              href="/puppy.jpg"
+              body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."
+            />
           </article>
-       <article>
-
-         <Card title="React" href="/puppy.jpg" body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."/>
-       </article>
-      </aside>
-      <article>
-   
+          <article>
+            <Card
+              title="React"
+              href="/puppy.jpg"
+              body="molestias vel cumque, iste similique voluptatem error reiciendis nisi repellendus placeat beatae laudantium dolores ut nobis."
+            />
+          </article>
+        </aside>
+        <article></article>
       </article>
-     </article>
-    
-
     </section>
-	
-	</>
+  </>
 </Layout>
 
 <style>
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-
-  .content{
+  .content {
     background-color: #222;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     color: azure;
-    border:solid 5px salmon
-    
+    border: solid 5px salmon;
   }
 
-  .content :nth-child(1),.content :nth-child(2),.content :nth-child(3),.content :nth-child(4){
+  .content :nth-child(1),
+  .content :nth-child(2),
+  .content :nth-child(3),
+  .content :nth-child(4) {
     border: solid 5px #2222;
-  
   }
-/*Content*/
-  .content :nth-child(1){
-    grid-column: span 2
+  /*Content*/
+  .content :nth-child(1) {
+    grid-column: span 2;
   }
- /*Aside*/
-  .content :nth-child(2){
+  /*Aside*/
+  .content :nth-child(2) {
     grid-column: span 1;
-  
+
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     height: auto;
-    
+
     justify-content: center;
   }
-  .content :nth-child(3){
+  .content :nth-child(3) {
     grid-column: span 2;
-    
-
   }
-  .content :nth-child(4){
+  .content :nth-child(4) {
     grid-column: span 2;
-    
   }
   @media only screen and (max-width: 600px) {
-    .content :nth-child(2){
-    grid-column: 1/-1;
-  
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    height: auto;
-    
-    justify-content: center;
-  }
-  .content :nth-child(1){
-    grid-column: 1/-1;
-  }
-  }
+    .content :nth-child(2) {
+      grid-column: 1/-1;
 
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      height: auto;
+
+      justify-content: center;
+    }
+    .content :nth-child(1) {
+      grid-column: 1/-1;
+    }
+  }
 </style>

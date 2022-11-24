@@ -1,16 +1,17 @@
 ---
 export interface Props {
-  href:string;
-  body:string;
+  href: string;
+  body: string;
   class?: string;
 }
 
-const {href, body, class:className} =Astro.props
+const { href, body, class: className } = Astro.props;
 ---
-    <a class={className} href={href}>{body}</a>
+
+<a class={className} href={href}>{body}</a>
 
 <style>
-  a{
+  a {
     color: #ffff;
   }
 </style>

@@ -2,29 +2,22 @@
 export interface Props {
   title: string;
   body: string;
-
-
 }
 
-const {title ,body} = Astro.props
+const { title, body } = Astro.props;
 ---
 
 <div class="card">
-
   <h2>{title}</h2>
   <p>{body}</p>
 </div>
 
 <style>
-  .card{
-    
+  .card {
     border: solid 3px #ffff;
     display: flex;
-    padding: 3px ;
+    padding: 3px;
     flex-direction: column;
-  
-    
-  
   }
   .card > h2 {
     padding-left: 5px;
@@ -35,8 +28,7 @@ const {title ,body} = Astro.props
       text-align: center;
     }
   }
-  .card > p{
+  .card > p {
     line-height: 1.3rem;
-    
   }
 </style>
